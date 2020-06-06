@@ -11,8 +11,8 @@ const transport = {
     user: process.env.THE_EMAIL,
     pass: process.env.thePassword,
   },
-  debug: true,
-  logger: true
+  // debug: true,
+  // logger: true
 };
 
   const transporter = nodemailer.createTransport(transport);

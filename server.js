@@ -17,6 +17,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/mailMe', require('./mailMe'))
 
+app.get('/', (req, res) =>{
+    res.send('Server is working')
+
+})
 
 
 app.listen(port, error => {
